@@ -1,0 +1,1064 @@
+@font-face {
+    font-family: gill;
+    src: url(./Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: gillsm;
+    src: url(./gilroy/Gilroy-SemiBold.ttf);
+}
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: yellow; */
+    padding: 2vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home a{
+    pointer-events: none;  
+}
+#left-nav{
+    height: 8vh;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: aquamarine; */
+}
+#left-nav h4{
+    font-family: gillsm;
+    font-size: 1.1vw;
+    color: aliceblue;
+    margin: 1.8vw;
+    /* background-color: aqua; */
+    transition: all ease .3s;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+#left-nav h4:hover{
+    font-size: 1.1vw;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#left-nav i{
+    color: white;
+    display: none;
+}
+#midnav{
+    height: 14vh;
+    width: 20%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    
+}
+#midnav img{
+    height: 15vh;
+    width: 110%;
+}
+#right-nav{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+#right-nav i{
+    color:#25D366;
+    font-weight: 900;
+    margin-right: .5vw;
+}
+#right-nav button{
+    font-family: gillsm;
+    font-weight: 1vw;
+    font-size: 1.3vw;
+    /* background:linear-gradient(to bottom right, rgb(145, 47, 124), rgb(244, 244, 15)); */
+    width: 12vw;
+    height: 6vh;
+    border-radius: 50px;   
+    transition: all ease .5s; 
+}
+#right-nav button:hover{
+    background-color: black;
+    color: white;
+    font-size: 1.4vw;
+    border: 2px solid white;
+}
+#page1-mid{
+    height: 55vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 0vw 3vw 0 3vw;
+    /* position: relative; */
+}
+
+#page1-mid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page1-mid h1{
+    position: absolute;
+    top: 17%;
+    left: 28%;
+    color: white;
+    /* mix-blend-mode: difference; */
+    font-family: gillsm;
+    font-size: 3.5vw;
+}
+#page1-mid h4{
+    font-family: gill;
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    top:36%;
+    left:40%;
+}
+
+#page1-mid button{
+    height: 7vh;
+    width: 15vw;
+    font-family: gillsm;
+    font-size: 1.2vw;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top:54%;
+    left:44%;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-right: 1vw;
+    transition: all ease .3s;
+}
+#page1-mid button:hover{
+    color: black;
+    background-color: white;
+    font-size: 1.3vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%; 
+    /* background-color: cadetblue; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#scroll{
+    height: 40vh;
+    width: 100%; 
+    /* background-color: cadetblue; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#container{
+    width: 130%;
+    height: 95%;
+    /* background-color: red; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    will-change: transform;
+}
+#container img{
+    /* display: none; */
+    height: 90%;
+    width: 10%;
+    border-radius: 50%;
+    margin: 1.6vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin-bottom: vw;
+}
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-125%);
+    }
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#page2 h1{
+    position: relative;
+    text-align: center;
+    top: 14%;
+    color: white;
+    font-family: gillsm;
+    text-indent: .5vw;
+    font-size: 4vw;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 10vw;
+    justify-content: space-between;
+}
+
+.section {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    /* border: 1px solid red; */
+}
+
+.section-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+#strength{
+    background-image: url("https://images.unsplash.com/photo-1532382708467-d720b918f0da?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+.overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.section:hover .overlay{
+    opacity: 1;
+}
+
+.section:hover .section-image{
+    transform: scale(1.2);
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.page-heading{
+    color: white;
+    text-align: center;
+    font-family: gillsm;
+    font-size: 4vw;
+}
+.cards-containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100%;
+    padding: 2.5vw;
+    background-color: rgb(4, 4, 4);
+    
+    
+}
+.cards{
+    position: relative;
+    /* background-color: #ff9f00; */
+    height: 90%;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  .cards-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    border-radius: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cards:hover .cards-hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .cards:hover img {
+    opacity: 0.6;
+  }
+  
+  /* Styling for the text inside the hover area */
+  .cards-hover h3 {
+    font-size: 1.5em;
+    font-family: gillsm;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .cards-hover p {
+    font-family: gill;
+    font-size: 1.1em;
+    color: white;
+    margin-top: 0;
+  }
+  
+  /* 3D hover effect based on cursor movement */
+  .cards {
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .cards:hover {
+    transform: scale(1.05);
+  }
+  
+  .cards-container {
+    perspective: 1000px;
+  }
+  
+  .cards-containers:hover .cards {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  
+  /* Hover effect for the trainer details (inside the hover container) */
+  .cards:hover .cards-hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* Heading for the Membership Section */
+.membership-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .membership-heading h1 {
+    color: white;
+    font-size: 36px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: gillsm;
+  }
+  
+  /* Container for the membership cards */
+  .membership-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 4vw;
+  }
+  
+  /* General styling for each card */
+  .membership-card {
+    position: relative;
+    width: 22vw; /* Smaller card width */
+    height: 50vh; /* Smaller card height */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Middle card placed higher */
+  .membership-card.middle {
+    transform: translateY(-40px);
+  }
+  
+  /* Styling for the card content */
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8vw;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: gill;
+  }
+  
+  .card-content .price {
+    font-size: 18px;
+    color: #ff9f00;
+    font-size: 2vw;
+    font-family: gillsm;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card-content ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    font-family: gill;
+    letter-spacing: 0;
+  }
+  
+  .card-content ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 1.3vw;
+  }
+  
+  /* Hover effects to highlight the card */
+  .membership-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .membership-card:hover .card-content h3 {
+    color: #ff9f00;
+  }
+  
+  .membership-card:hover .price {
+    color: #fff;
+  }
+  
+  /* Animation for text content highlight */
+  .membership-card:hover .card-content ul li {
+    color: #ff9f00;
+    font-weight: bold;
+  }
+/* Apply the styles only within the #page5 container */
+
+#page5 {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.heading {
+    margin-top: 0vw;
+    font-size: 2 rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1vw;
+    width: 80%;
+    height: 90vh;
+}
+
+.header .row, .data .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sub-column {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sub-column:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.amount {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.amount:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.header .column {
+    font-size: 1.2em;
+    color: white;
+}
+
+.row .column {
+    font-size: .7em;
+    color: white;
+}
+
+@media(max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    #page1{
+        height: 85%;
+        width: 100%;
+        background-color: black;
+    }
+    #nav{
+        height: 8vh;
+        width: 100%;
+        padding: 2vw 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #left-nav{
+        height: 8vh;
+    }
+    #left-nav h4{
+        font-family: gillsm;
+        font-size: 1.1vw;
+        color: aliceblue;
+        margin: 1.8vw;
+        /* background-color: aqua; */
+        transition: all ease .3s;
+        text-decoration: none;
+        display: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    #left-nav i{
+        color: white;
+        display: initial;
+    }
+    #midnav{
+        height: 10vh;
+        width: 50%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: center;
+        
+    }
+    #midnav img{
+        height: 100%;
+        width: 110%;
+    }
+    #right-nav{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #right-nav i{
+        color:#25D366;
+        font-weight: 900;
+        margin-right: .5vw;
+    }
+    #right-nav button{
+        font-family: gillsm;
+        font-weight: 1vw;
+        font-size: 2vw;
+        /* background:linear-gradient(to bottom right, rgb(145, 47, 124), rgb(244, 244, 15)); */
+        width: 18vw;
+        height: 4vh;
+        border-radius: 50px;   
+        transition: all ease .5s; 
+    }
+    #right-nav button:visited{
+        background-color: black;
+        color: white;
+        font-size: 1.4vw;
+        border: 2px solid white;
+    }
+    #page1-mid{
+        height: 55vh;
+        width: 100%;
+        /* background-color: aquamarine; */
+        padding: 0vw 3vw 0 3vw;
+        position: relative;
+    }
+    
+    #page1-mid img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    #page1-mid h1{
+        position: absolute;
+        top: 17%;
+        left: 40;
+        /* text-align: center; */
+        color: white;
+        /* mix-blend-mode: difference; */
+        font-family: gillsm;
+        font-size: 5vw;
+    }
+    #page1-mid h4{
+        font-family: gill;
+        font-size: 3.5vw;
+        color: white;
+        position: absolute;
+        top:30%;
+        left:20%;
+    }
+    
+    #page1-mid button{
+        height: 5vh;
+        width: 25vw;
+        font-family: gillsm;
+        font-size: 3vw;
+        color: white;
+        background-color: black;
+        position: absolute;
+        top:54%;
+        left:35%;
+        border-radius: 50px;
+        border: 2px solid white;
+        margin-right: 1vw;
+        transition: all ease .3s;
+    }
+
+    #scroll{
+        height: 20vh;
+        width: 200vw; 
+        /* background-color: cadetblue; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+    }
+    #container{
+        width: 130%;
+        height: 95%;
+        /* background-color: red; */
+        display: inline-block;
+        padding: 2vw;
+        animation-name: anime;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        will-change: transform;
+    }
+    #container img{
+        /* display: none; */
+        height: 90%;
+        width: 10%;
+        border-radius: 50%;
+        margin: 1.6vw;
+        object-fit: cover;
+        object-position: 30% 30%;
+        margin-bottom: vw;
+    }
+    @keyframes anime {
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: translate(-125%);
+        }
+    }
+    #page2{
+        height: 60%;
+        width: 100%;
+        background-color: black;
+    }
+    #page2 h1{
+        position: relative;
+        text-align: center;
+        top: 3%;
+        color: white;
+        font-family: gillsm;
+        text-indent: .5vw;
+        font-size: 8vw;
+    }
+    .container {
+        display: flex;
+        height: 50vh;
+        padding: 10vw;
+        justify-content: space-between;
+    }
+    
+    .section {
+        position: relative;
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        /* border: 1px solid red; */
+    }
+    
+    .section-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+    #strength{
+        background-image: url("https://images.unsplash.com/photo-1532382708467-d720b918f0da?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .overlay {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: .7rem;
+        font-family: gillsm;
+        font-weight: bold;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .section:hover .overlay{
+        opacity: 1;
+    }
+    
+    .section:hover .section-image{
+        transform: scale(1.2);
+    }
+    
+    #page3{
+        width: 100%;
+        height: 150vh;
+        background-color: black;
+    }
+    .page-heading{
+        color: white;
+        text-align: center;
+        font-family: gillsm;
+        font-size: 8vw;
+    }
+    .cards-containers{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150vh;
+        width: 100vw;
+        padding: 2.5vw;
+        background-color: rgb(4, 4, 4);
+        
+        
+    }
+    .cards{
+        position: relative;
+        /* background-color: #ff9f00; */
+        height: 90%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    .cards img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+      }
+      .cards-hover {
+        position: absolute;
+        top: 140;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transform: translateY(20px);
+        border-radius: 20px;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      
+      .cards:hover .cards-hover {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .cards:hover img {
+        opacity: 0.6;
+      }
+      
+      /* Styling for the text inside the hover area */
+      .cards-hover h3 {
+        font-size: 1.5em;
+        font-family: gillsm;
+        color: white;
+        margin-bottom: 10px;
+      }
+      
+      .cards-hover p {
+        font-family: gill;
+        font-size: 1.1em;
+        color: white;
+        margin-top: 0;
+      }
+      
+      /* 3D hover effect based on cursor movement */
+      .cards {
+        transform-style: preserve-3d;
+        transition: transform 0.1s ease-in-out;
+      }
+      
+      .cards:hover {
+        transform: scale(1.05);
+      }
+      
+      .cards-container {
+        perspective: 1000px;
+      }
+      
+      .cards-containers:hover .cards {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+      
+      /* Hover effect for the trainer details (inside the hover container) */
+      .cards:hover .cards-hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+      }
+      
+    
+    #page4{
+        height: 170vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    /* Heading for the Membership Section */
+    .membership-heading {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .membership-heading h1 {
+        color: white;
+        font-size: 8vw;
+        padding-top: 8vw;
+        background-color: transparent;
+        border-radius: 10px;
+        font-family: gillsm;
+      }
+      
+      /* Container for the membership cards */
+      .membership-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        gap: 5vw;
+      }
+      
+      /* General styling for each card */
+      .membership-card {
+        position: relative;
+        width: 60vw; /* Smaller card width */
+        height: 40vh; /* Smaller card height */
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .membership-card.middle{
+        margin-top: 20vw;
+      }
+      
+      /* Styling for the card content */
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .card-content h3 {
+        font-size: 5vw;
+        color: #fff;
+        margin-bottom: 10px;
+        font-family: gill;
+      }
+      
+      .card-content .price {
+        font-size: 18px;
+        color: #ff9f00;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .card-content ul {
+        list-style: none;
+        padding: 0;
+        color: #fff;
+        font-family: gill;
+        letter-spacing: 0;
+      }
+      
+      .card-content ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      #page5 {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+    }
+    
+    .heading {
+        margin-top: 0vw;
+        font-size: 2 rem;
+        margin-bottom: 40px;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .table {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 1vw;
+        width: 85vw;
+        height: 60vh;
+    }
+    
+    .header .row, .data .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .column {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .sub-column {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 5px 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .sub-column:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: scale(1.1);
+    }
+    
+    .amount {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .amount:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.1);
+    }
+    
+    .header .column {
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    .row .column {
+        font-size: 3vw;
+        color: white;
+    }  
+      
+    
+} 
+  
